@@ -1,6 +1,6 @@
 Sample app to display the weather forecasting using openweathermap.org API's. 
 
-Smaple code contains the floowing functionalities :
+Sample code contains the following functionalities :
 
 * Search Screen
 * Allow customers to enter a US city
