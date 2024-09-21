@@ -21,12 +21,27 @@ fun HomeScreen(
     val state by viewModel.state.collectAsState()
     var cityName by remember { mutableStateOf("") }
     val lastCity by viewModel.lastCity.collectAsState()
+    val locationPermissionGranted by viewModel.locationPermissionGranted.collectAsState()
+
 
     LaunchedEffect(lastCity) {
         if (lastCity.isNotEmpty()) {
             cityName = lastCity
         }
     }
+    /*LaunchedEffect(Unit) {
+        viewModel.checkLocationPermission()
+    }
+
+    LaunchedEffect(locationPermissionGranted) {
+        if (locationPermissionGranted) {
+            viewModel.getWeatherByCurrentLocation()
+        } else if (lastCity.isNotEmpty()) {
+            cityName = lastCity
+            viewModel.getWeather(lastCity)
+        }
+    }*/
+
 
     Column(
         modifier = Modifier

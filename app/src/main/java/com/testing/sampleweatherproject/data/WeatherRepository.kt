@@ -3,6 +3,7 @@ package com.testing.sampleweatherproject.data
 import android.content.Context
 import android.location.Geocoder
 import com.testing.sampleweatherproject.data.model.WeatherData
+import com.testing.sampleweatherproject.util.GeocoderManager
 import com.testing.sampleweatherproject.util.Resource
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
@@ -12,7 +13,8 @@ import javax.inject.Inject
 
 class WeatherRepository @Inject constructor(
     private val api: WeatherApi,
-    private val context: Context
+    private val context: Context,
+    geocoderManager: GeocoderManager
 ) {
     fun getWeather(cityName: String): Flow<Resource<WeatherData>> = flow {
         emit(Resource.Loading())

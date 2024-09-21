@@ -52,6 +52,13 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.android.gms)
+    implementation(libs.android.hilt.testing)
+    implementation(libs.androidx.ui.test.junit4)
+    implementation(libs.androidx.ui.test.manifest)
+    implementation(libs.android.mockk)
+    implementation(libs.android.agent)
+    implementation(libs.android.core.testing)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

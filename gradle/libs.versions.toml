@@ -18,6 +18,11 @@ navigationCompose = "2.8.1"
 datastorePreferencesCoreJvm = "1.1.1"
 datastore = "1.0.0"
 hiltNavigation="1.0.0"
+playserviceslocation ="21.0.1"
+hiltTesting="2.42"
+junitTest="1.4.3"
+mockk="1.13.12"
+coreTesting="2.1.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -31,8 +36,8 @@ androidx-ui = { group = "androidx.compose.ui", name = "ui" }
 androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
 androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
-androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
-androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" , version.ref = "junitTest"}
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" , version.ref = "junitTest"}
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
 androidx-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 androidx-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler",version.ref = "hilt" }
@@ -48,6 +53,12 @@ androidx-datastore-preferences-core-jvm = { group = "androidx.datastore", name =
 androidx-datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
 androidx-hilt-navigation = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigation" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+android-gms = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playserviceslocation" }
+android-hilt-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltTesting" }
+android-mockk = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+android-agent = { group = "io.mockk", name = "mockk-agent", version.ref = "mockk" }
+android-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
+
 
 
 [plugins]
